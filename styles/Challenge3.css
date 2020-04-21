@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #121212;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    background-color: #1e1e1e;
+    color: white;
+    margin: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.inputTekst ,.knop{
+    height: 40px;
+    padding: 5px;
+}
+
+.knop{
+    background-color:  #1e1e1e;
+    border-color: white;
+    color: white;
+    border: 2px solid white;
+    width: 75px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.weerContainer ,.mapContainer{
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.weerContainer{
+    width: 90%;
+}
+
+.mapContainer{
+    width: 90%;
+}
+
+#map{
+    height: 400px;
+}
+
+
+
+@media (min-width: 600px) {
+    .input{
+        width: 40%;
+
+    }
+    
+    
+    .weerContainer{
+        width: 50%;
+    }
+    
+    #map{
+        height: 450px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .input{
+        width: 25%;
+    }
+    
+    .container{
+        flex-direction: row;
+    }
+    
+    .weerContainer{
+        width: 25%;
+        margin-right: 25px;
+    }
+    
+    .mapContainer{
+        width: 60%;
+        padding: 20px;
+    }
+    
+    #map{
+        height: 750px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .input{
+        width: 15%;
+    }
+    
+    .weerContainer{
+        width: 15%;
+    }
+    
+    .mapContainer{
+        width: 70%;
+    }
+    
+}
