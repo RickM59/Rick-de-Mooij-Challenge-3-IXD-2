@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head lang="nl">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <title>API'tje voor Musk</title>
+        <link rel="stylesheet" href="styles/Challenge3.css" type="text/css">
+        <script src="scripts/Challenge3.js" defer></script>
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+
+    </head>
+    
+    <body>
+        
+        <div class="input">
+            
+            <input type="text" class="inputTekst" placeholder="Voer uw locatie in..">
+                
+            <input type="submit" class="knop" value="Zoeken">
+            
+        </div>
+            
+         <div class="container">   
+        
+        
+            <div class="weerContainer">
+                
+                <div class="icoon"><img id="weerIcoon" src="icons/unknown.png"></div>
+                
+                <div class="temperatuur">Temperatuur:</div>
+                
+                <div class="beschrijving">Beschrijving:</div>
+            
+                <div class="locatie">Locatie:</div>
+                
+            </div>
+        
+            <div class="mapContainer">
+
+                <div id='map'></div>
+
+            </div>
+             
+        </div>
+        
+    </body>
+
+</html>
+    
